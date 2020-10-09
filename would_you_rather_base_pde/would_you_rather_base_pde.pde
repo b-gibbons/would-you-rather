@@ -68,8 +68,7 @@ void mouseClicked() {
 
 boolean inSquare(float x1, float y1, float x2, float y2) {
   return (mouseX>x1)&&(mouseX<x2)&&(mouseY>y1)&&(mouseY<y2);
-}
-
+} //the following code was adapted from the processing docs (https://processing.org/examples/piechart.html)
 void drawPieChart(float diameter, float[] data) {
   background(150, 150, 250);
   if (data[0] > data[1]) {
